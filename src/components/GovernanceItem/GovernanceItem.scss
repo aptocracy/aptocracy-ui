@@ -1,0 +1,25 @@
+.governance-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 0.5em;
+  padding: 1em 2em;
+
+  &__title {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+  }
+
+  &__info {
+    display: flex;
+    gap: 1em;
+    font-size: 0.875em;
+  }
+
+  &__info-label {
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+}

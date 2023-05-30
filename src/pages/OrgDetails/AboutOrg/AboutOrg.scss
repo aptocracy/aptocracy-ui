@@ -1,0 +1,27 @@
+.about-org {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+
+  img {
+    width: 144px;
+    border-radius: 50%;
+    height: fit-content;
+    object-fit: contain;
+  }
+
+  p {
+    color: var(--text-gray-color);
+  }
+
+  &__collection-address {
+    font-size: 0.875em;
+  }
+
+  &__chips {
+    display: flex;
+    gap: 0.5em;
+  }
+}

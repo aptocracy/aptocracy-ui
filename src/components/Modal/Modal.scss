@@ -1,0 +1,58 @@
+@import "../../index.scss";
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+
+  &__container {
+    padding: 0em 2em;
+    overflow: auto;
+
+    @include md {
+      padding: 0em 2em;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--primary-blue-color);
+    padding-bottom: 1em;
+    font-weight: 600;
+  }
+
+  &__content {
+    max-width: 800px;
+    max-height: 90vh;
+    background: white;
+    padding: 3em 0.2em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    position: relative;
+
+    @include sm {
+      width: 90vw;
+    }
+  }
+
+  &__close-icon {
+    cursor: pointer;
+
+    @include sm {
+      right: 15px;
+      top: 15px;
+    }
+  }
+}

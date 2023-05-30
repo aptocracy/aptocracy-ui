@@ -1,0 +1,70 @@
+.proposal-item {
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: white;
+  margin: 1em 0;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    align-items: center;
+  }
+
+  &__type-and-time {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  &__time {
+    font-size: 0.75em;
+    color: #242424;
+  }
+
+  &__name {
+    font-weight: 600;
+  }
+
+  &__description {
+    font-size: 0.85em;
+  }
+
+  &__options {
+    margin: 1em 0;
+  }
+
+  &__option {
+    display: flex;
+    gap: 1em;
+    margin: 1em 0;
+  }
+
+  &__options-label {
+    font-size: 0.875em;
+  }
+
+  &__option-votes {
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__option-name {
+    font-weight: 600;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: end;
+    gap: 1em;
+    justify-content: end;
+    padding: 0.7em 0;
+    border-top: 1px solid #8281812c;
+  }
+
+  &__max-options-info {
+    font-size: 0.75em;
+    color: #242424;
+    margin: 0.2em 0;
+  }
+}

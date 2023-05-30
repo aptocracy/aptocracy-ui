@@ -1,0 +1,23 @@
+.select-with-desc {
+  padding: 1.3em;
+  background-color: var(--primary-gray-color);
+  border-radius: 0.5em;
+  margin: 1em 0;
+  border: 1px solid transparent;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-weight: 600;
+  }
+
+  &__description {
+    font-size: 0.875em;
+    margin-top: 0.5em;
+    color: #6c6c6c;
+  }
+}

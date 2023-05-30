@@ -1,0 +1,105 @@
+.custom-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  font-size: 22px;
+  width: 25px;
+  height: 25px;
+
+  &--disabled {
+    opacity: 0.5;
+  }
+
+  &:hover input ~ .custom-checkbox__checkmark {
+    // opacity: 0.8;
+    cursor: pointer;
+  }
+
+  //Hide default checkbox
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  //When the checkbox is checked, add linear-gradient background
+  input:checked ~ .custom-checkbox__checkmark {
+    background: var(--primary-blue-color);
+  }
+  input:checked ~ .custom-checkbox__checkmark-transparent {
+    background: transparent;
+  }
+
+  // Show the checkmark when checked
+  input:checked ~ .custom-checkbox__checkmark:after {
+    display: block;
+  }
+  input:checked ~ .custom-checkbox__checkmark-transparent:after {
+    display: block;
+  }
+
+  // Create a custom checkbox
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 4px;
+    background: white;
+    border: 1px solid var(--primary-blue-color);
+
+    // Create the checkmark/indicator (hidden when not checked)
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    // Style the checkmark/indicator
+    &::after {
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid black;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+  &__checkmark-transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid white;
+    accent-color: white;
+
+    // Create the checkmark/indicator (hidden when not checked)
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    // Style the checkmark/indicator
+    &::after {
+      left: 7px;
+      top: 3px;
+      width: 3px;
+      height: 8px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}

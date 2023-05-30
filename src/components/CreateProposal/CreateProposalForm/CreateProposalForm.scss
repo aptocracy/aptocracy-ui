@@ -1,0 +1,20 @@
+.create-proposal-form {
+  &__title {
+    font-weight: 700;
+    font-size: 0.875em;
+  }
+
+  &__label {
+    margin: 1em 0;
+    font-size: 0.875em;
+  }
+
+  &__specific-fields {
+    margin: 1em 0;
+  }
+
+  &__script-params {
+    display: flex;
+    gap: 1em;
+  }
+}

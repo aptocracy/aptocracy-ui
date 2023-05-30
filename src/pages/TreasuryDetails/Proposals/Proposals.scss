@@ -1,0 +1,9 @@
+.proposals {
+  margin: 2em 0;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}

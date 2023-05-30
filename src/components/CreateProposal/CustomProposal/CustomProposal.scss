@@ -1,0 +1,65 @@
+.custom-proposal {
+  &__title {
+    font-weight: 700;
+    font-size: 0.875em;
+    margin: 1em 0;
+  }
+
+  &__label {
+    margin: 1em 0;
+    font-size: 0.875em;
+  }
+
+  &__script-params {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      align-self: flex-start;
+      cursor: pointer;
+    }
+  }
+
+  &__script-params-item {
+    display: flex;
+    gap: 1em;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // img {
+    //   width: 18px;
+
+    //   &:hover {
+    //     opacity: 0.7;
+    //   }
+    // }
+  }
+
+  &__add-button {
+    padding: 0.5em;
+    gap: 0.5em;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5em;
+    border: 1px solid #242424;
+    background-color: transparent;
+
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+  }
+
+  &__script-param-value {
+    width: 70%;
+  }
+
+  &__script-param-type {
+    width: 30%;
+    margin: 0.7em 0;
+  }
+}

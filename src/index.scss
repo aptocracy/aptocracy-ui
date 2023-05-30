@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=IBM+Plex+Sans&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne&display=swap");
+
+:root {
+  --dark-blue-color: #03035a;
+  --primary-color: rgba(255, 255, 255, 0.03);
+  --primary-blue-color: #d1eff7;
+  --blue-hover-color: #a2deed;
+  --modal-background-color: #0c121d;
+  --background-color: #f3f3f3;
+  --primary-gray-color: #f4f4f4;
+  --red-color: #fd2b2b;
+  --text-gray-color: #6c6c6c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  text-align: start;
+}
+
+button[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+p,
+a,
+li,
+b,
+input,
+textarea,
+span,
+strong,
+::placeholder,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+//REACT NOTIFICATION CSS
+
+div .notification-container {
+  top: 6px;
+  right: 13px;
+
+  @media (max-width: 769px) {
+    right: 0;
+  }
+}
+
+div .notification {
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  font-size: 0.8em;
+  box-shadow: unset;
+  color: black;
+  word-break: break-word;
+  background-color: rgb(195, 245, 232);
+}
+
+div .notification .title {
+  font-size: 0.9em;
+}
+
+div .notification .description {
+  font-size: 0.9em;
+}
+
+div .notification-error {
+  background-color: #fa6666;
+}
+
+//MIXINS FOR RESPONSIVE DESIGN
+
+$small-width: 425px;
+$medium-width: 768px;
+$small-tablet-width: 548px;
+
+@mixin sm {
+  @media (max-width: #{$small-width }) {
+    @content;
+  }
+}
+
+//breaks by default, so added a breakpoint to solve that specific case
+@mixin smt {
+  @media (max-width: #{$small-tablet-width}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: #{$medium-width}) {
+    @content;
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

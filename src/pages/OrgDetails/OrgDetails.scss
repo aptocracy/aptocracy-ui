@@ -1,0 +1,64 @@
+.org-details {
+  margin: 0 4em;
+  padding-bottom: 2em;
+
+  span {
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__tabs {
+    margin: 1em 0em;
+    width: max-content;
+    border: 1px solid rgb(185, 185, 185);
+
+    border-radius: 0.5em;
+  }
+
+  &__tab {
+    padding: 0.75em 1.5em;
+    background-color: white;
+    border: 0px;
+    font-weight: 600;
+
+    &:hover {
+      background-color: var(--primary-grey-color);
+      cursor: pointer;
+    }
+
+    &:first-child {
+      border-top-left-radius: 0.5em;
+      border-bottom-left-radius: 0.5em;
+    }
+
+    &:last-child {
+      border-top-right-radius: 0.5em;
+      border-bottom-right-radius: 0.5em;
+    }
+
+    &--active {
+      background-color: var(--primary-grey-color);
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5em;
+  }
+
+  &__invitation {
+    background-color: white;
+    padding: 1em;
+    margin: 2em 0;
+    font-size: 0.875em;
+    border-radius: 0.5em;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

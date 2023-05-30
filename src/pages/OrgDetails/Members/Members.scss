@@ -1,0 +1,43 @@
+.members {
+  &__member-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 0.5em;
+    padding: 1em 2em;
+    margin: 1em 0;
+  }
+  &__member-item-main {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    img {
+      width: 50px;
+      height: fit-content;
+      border-radius: 50%;
+    }
+    p {
+      color: #242424;
+      font-weight: 700;
+    }
+  }
+
+  &__info {
+    display: flex;
+    gap: 5em;
+    font-size: 0.875em;
+  }
+
+  &__info-label {
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+
+  &__member-item-address {
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.add-treasury {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin: 1em 0;
+  }
+
+  button {
+    align-self: flex-end;
+    margin-top: 1em;
+  }
+}

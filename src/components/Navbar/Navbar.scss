@@ -1,0 +1,67 @@
+@import "../../index.scss";
+
+.navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 5em;
+  margin-bottom: 1em;
+  background-color: white;
+  border-bottom: 2px solid var(--primary-blue-color);
+
+  @include smt {
+    flex-direction: column;
+  }
+
+  &__logo {
+    width: 120px;
+    height: 100%;
+    object-fit: contain;
+
+    @include smt {
+      margin-bottom: 1.5em;
+    }
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    ul {
+      display: flex;
+      gap: 1em;
+      font-size: 0.875em;
+      font-weight: 600;
+      li {
+        text-decoration: none;
+
+        a {
+          &:hover {
+            color: var(--blue-hover-color);
+            cursor: pointer;
+          }
+          color: black;
+        }
+      }
+    }
+  }
+
+  //STYLING FOR WALLETMULTIBUTTON
+  &__wallet-button {
+    line-height: normal;
+    padding: 1em;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.3s ease-out;
+    border-radius: 0.5em;
+    cursor: pointer;
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+}

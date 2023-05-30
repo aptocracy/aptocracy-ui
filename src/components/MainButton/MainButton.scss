@@ -1,0 +1,48 @@
+@import "../../index.scss";
+
+.main-button {
+  padding: 0.75em 1em;
+  border-radius: 1em;
+  border: 1px solid transparent;
+  background-color: #242424;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  transition: all 0.3s ease-out;
+
+  &--light {
+    background-color: transparent;
+    color: #242424;
+    border: 1px solid #242424;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  &--loading {
+    color: transparent;
+
+    img {
+      visibility: hidden;
+    }
+  }
+
+  &__loader {
+    position: absolute;
+    left: calc(50% - 12px);
+    top: calc(50% - 12px);
+
+    svg {
+      visibility: visible;
+    }
+  }
+}

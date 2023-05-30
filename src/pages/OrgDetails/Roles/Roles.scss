@@ -1,0 +1,32 @@
+.roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+
+  &__item {
+    width: 30%;
+    padding: 1.5em;
+    background-color: white;
+    border-radius: 0.5em;
+    border: 1px solid transparent;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+  }
+
+  &__role-name {
+    font-weight: 700;
+  }
+
+  &__actions-title {
+    font-size: 0.875em;
+    margin: 1em 0;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}

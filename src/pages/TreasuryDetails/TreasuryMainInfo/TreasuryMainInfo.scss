@@ -1,0 +1,41 @@
+.treasury-main-info {
+  display: flex;
+  padding: 2em;
+  background-color: white;
+  justify-content: space-between;
+  border-radius: 0.5em;
+  align-items: center;
+  &__balance {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  &__balance-title {
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  &__balance-amount {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  &__member-rights {
+    display: flex;
+    gap: 2em;
+  }
+  &__member-rights-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  &__member-rights-label {
+    font-size: 1em;
+  }
+
+  &__member-rights-value {
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+}

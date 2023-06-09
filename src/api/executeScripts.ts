@@ -4,8 +4,11 @@ export const executeProposal = async (
   address: string,
   executionStepId: string
 ) => {
+
+  const serverEndpoint=process.env.EXECUTE_SCRIPT_ENDPOINT!;
+
   try {
-    await fetch("http://localhost:5600/execute", {
+    await fetch(`${serverEndpoint}/execute`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

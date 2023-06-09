@@ -22,7 +22,10 @@ const authLink = new ApolloLink((operation, forward) => {
   return forward(operation);
 });
 
-const httpLink = new HttpLink({ uri: "http://localhost:5500/graphql", fetch });
+
+const graphQlEndpoint=process.env.GRAPHQL_ENDPOINT!;
+
+const httpLink = new HttpLink({ uri: `${graphQlEndpoint}/graphql`, fetch });
 
 const apolloClient = new ApolloClient({
   link: concat(authLink, httpLink),

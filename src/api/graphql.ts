@@ -23,7 +23,7 @@ const authLink = new ApolloLink((operation, forward) => {
 });
 
 
-const graphQlEndpoint=process.env.GRAPHQL_ENDPOINT!;
+const graphQlEndpoint="http://67.207.77.223:5500"
 
 const httpLink = new HttpLink({ uri: `${graphQlEndpoint}/graphql`, fetch });
 

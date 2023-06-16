@@ -23,7 +23,7 @@ const authLink = new ApolloLink((operation, forward) => {
 });
 
 
-const graphQlEndpoint="http://67.207.77.223:5500"
+const graphQlEndpoint="https://graphql.aptocracy.com";
 
 const httpLink = new HttpLink({ uri: `${graphQlEndpoint}/graphql`, fetch });
 

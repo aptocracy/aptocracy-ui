@@ -41,7 +41,7 @@ export const createOrganization = async (
       ? {
           type: "entry_function_payload",
           function: `${orgModuleAddress}::aptocracy::create_non_nft_organization`,
-          type_arguments: [],
+          type_arguments: [APTOS_COIN_ADDRESS],
           arguments: [
             values.name,
             values.orgType,
